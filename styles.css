@@ -1,0 +1,49 @@
+/* Tab Styles */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #ccc;
+}
+
+tab {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+tab:hover {
+    background-color: #ddd;
+}
+
+tab.active {
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+/* Section Styles */
+.section {
+    display: none; /* Hidden by default */
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* Styles for specific sections */
+.equations { background-color: #eef; }
+.matrices { background-color: #fee; }
+.calculus { background-color: #efe; }
+.graphing { background-color: #eef; }
+.exercises { background-color: #eef; }
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
