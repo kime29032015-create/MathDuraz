@@ -1,1 +1,79 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Math Application</title>\n    <link rel="stylesheet" href="styles.css">\n    <script src="script.js" defer></script>\n</head>\n<body>\n    <header>\n        <h1>Math Application</h1>\n    </header>\n    <nav>\n        <ul>\n            <li><a href="#basic-operations">Basic Operations</a></li>\n            <li><a href="#systems-of-equations">Systems of Equations</a></li>\n            <li><a href="#matrices">Matrices</a></li>\n            <li><a href="#calculus">Calculus</a></li>\n            <li><a href="#graphing">Graphing</a></li>\n            <li><a href="#interactive-exercises">Interactive Exercises</a></li>\n        </ul>\n    </nav>\n    <main>\n        <section id="basic-operations">\n            <h2>Basic Operations</h2>\n            <p>Content for basic operations goes here.</p>\n        </section>\n        <section id="systems-of-equations">\n            <h2>Systems of Equations</h2>\n            <p>Content for systems of equations goes here.</p>\n        </section>\n        <section id="matrices">\n            <h2>Matrices</h2>\n            <p>Content for matrices goes here.</p>\n        </section>\n        <section id="calculus">\n            <h2>Calculus</h2>\n            <p>Content for calculus goes here.</p>\n        </section>\n        <section id="graphing">\n            <h2>Graphing</h2>\n            <p>Content for graphing goes here.</p>\n        </section>\n        <section id="interactive-exercises">\n            <h2>Interactive Exercises</h2>\n            <p>Content for interactive exercises goes here.</p>\n        </section>\n    </main>\n    <footer>\n        <p>&copy; 2026 Math Application. All rights reserved.</p>\n    </footer>\n</body>\n</html>\n
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Duraz - Aplicación de Matemáticas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🧮 Math Duraz</h1>
+        <p>Practica ejercicios matemáticos interactivos</p>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="#operaciones" class="nav-link">Operaciones Básicas</a></li>
+            <li><a href="#matrices" class="nav-link">Matrices</a></li>
+            <li><a href="#calculus" class="nav-link">Cálculo</a></li>
+            <li><a href="#ejercicios" class="nav-link">Ejercicios</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- Operaciones Básicas -->
+        <section id="operaciones" class="section active">
+            <h2>Operaciones Básicas</h2>
+            <div class="card">
+                <h3>Suma</h3>
+                <input type="number" id="num1" placeholder="Número 1" value="5">
+                <input type="number" id="num2" placeholder="Número 2" value="3">
+                <button onclick="realizarOperacion('suma')">Sumar</button>
+                <p id="resultado-suma"></p>
+            </div>
+        </section>
+
+        <!-- Matrices -->
+        <section id="matrices" class="section">
+            <h2>Matrices</h2>
+            <div class="card">
+                <h3>Determinante (Matriz 2x2)</h3>
+                <input type="number" id="m11" placeholder="a" value="1">
+                <input type="number" id="m12" placeholder="b" value="2">
+                <input type="number" id="m21" placeholder="c" value="3">
+                <input type="number" id="m22" placeholder="d" value="4">
+                <button onclick="calcularDeterminante()">Calcular Determinante</button>
+                <p id="resultado-det"></p>
+            </div>
+        </section>
+
+        <!-- Cálculo -->
+        <section id="calculus" class="section">
+            <h2>Cálculo</h2>
+            <div class="card">
+                <h3>Bajo desarrollo</h3>
+                <p>Las herramientas de cálculo están siendo desarrolladas.</p>
+            </div>
+        </section>
+
+        <!-- Ejercicios -->
+        <section id="ejercicios" class="section">
+            <h2>Ejercicios Interactivos</h2>
+            <div class="card">
+                <h3>Quiz Matemático</h3>
+                <p id="quiz-pregunta">Cargando pregunta...</p>
+                <input type="number" id="quiz-respuesta" placeholder="Tu respuesta">
+                <button onclick="verificarRespuesta()">Verificar</button>
+                <p id="quiz-resultado"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Math Duraz. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
