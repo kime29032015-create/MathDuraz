@@ -1,49 +1,47 @@
-/* styles.css */
-
-body {
-    background: linear-gradient(135deg, #6e7a89, #d1e8f6);
-    color: #333;
-    font-family: Arial, sans-serif;
-    animation: backgroundAnimation 10s infinite alternate;
+.animated-background {
+  background: url('path/to/animated-background.gif');
+  animation: backgroundAnimation 10s infinite alternate;
 }
 
 @keyframes backgroundAnimation {
-    0% { background-color: #d1e8f6; }
-    50% { background-color: #b7c9d9; }
-    100% { background-color: #6e7a89; }
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #1c1c1c;
-    text-align: center;
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s;
 }
 
-.math-symbol {
-    display: inline-block;
-    animation: float 6s infinite ease-in-out;
-    font-size: 2em;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-@keyframes float {
-    0% { transform: translatey(0); }
-    50% { transform: translatey(-10px); }
-    100% { transform: translatey(0); }
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: background-color 0.3s;
 }
 
-/* Additional styling for buttons */
-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+.button:hover {
+  background-color: #45a049;
 }
 
-button:hover {
-    background-color: #45a049;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
